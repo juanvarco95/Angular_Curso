@@ -8,3 +8,4 @@ git push -u origin master -- Primer push
 git log --oneline
 git branch <nombre> -- Crear una rama 
 git checkout <nombre> -- Cambiar de rama
+git
