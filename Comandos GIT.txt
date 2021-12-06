@@ -1,0 +1,5 @@
+Comandos GIT
+
+git init -- Iniciar repositorio
+git status -- Ver estado del respositorio
+git cached <nombre> -- Eliminar del repositorio
