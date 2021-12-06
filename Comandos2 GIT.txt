@@ -1,0 +1,10 @@
+Comandos GIT
+
+git init -- Iniciar repositorio
+git status -- Ver estado del respositorio
+git cached <nombre> -- Eliminar del repositorio
+git commit -m "Mensaje" -- Subir al repositorio
+git push -u origin master -- Primer push
+git log --oneline
+git branch <nombre> -- Crear una rama 
+git checkout <nombre> -- Cambiar de rama
