@@ -1,10 +1,16 @@
-{{nombre}}
-<div>
+<!-- {{nombre}} -->
+
+<!-- * String intepolation {{}} -->
+<!-- <div>
   <p *ngFor = "let n of listUsuario">
-    {{n.id}} -- {{n.name}}
+    {{n.id}} -- {{n.name}} -- {{n.age}} -- {{n.status}} 
   </p>
-</div>
+</div> -->
 
+<!-- * Property binding -->
+<!-- <img [src] = "imagenURL" >
+<button [class.activo] = "activarButton"  [disabled] = "activarButton" (click) = "desactivarButton(true)">Property binding </button>
 
-
-<router-outlet></router-outlet>
+<button (mouseover) = "mostrarEvento($event)">Boton de evento </button>
+<!-- <button (keyup.enter) = "mostrarEvento($event)">Boton de evento </button> -->
+<router-outlet></router-outlet>  

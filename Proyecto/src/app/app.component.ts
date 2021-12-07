@@ -8,12 +8,13 @@ import { Usuario } from './models/usuario';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // public nombre: string = 'Juan Miguel';
-  // nombre = 'Juan';
+
   public nombre: string = 'Juan Miguel';
   public nombres: string[] = ['Juan', 'Miguel', 'Vargas'];
+  public listUsuario: Usuario[] = [];
+  public activarButton: boolean = false;
+  public imagenURL = "https://placeimg.com/400/200/any";
 
-  public listUsuario: Usuario[] = []
 
   constructor(){
     this.addFirstElement('Juan');
@@ -27,15 +28,16 @@ export class AppComponent {
     usuario.name = 'Juan';
     usuario.age = 26;
     usuario.status = true;
-
+    this.listUsuario.push(usuario);
+    
     let usuario2:Usuario = new Usuario();
     usuario2.id = 1;
     usuario2.name = 'Miguel';
     usuario2.age = 26;
     usuario2.status = true;
-
-    this.listUsuario.push()
-
+    this.listUsuario.push(usuario2);
+    
+    // this.elimniarId(1);
   }
 
   public addFirstElement(nombre: string): void {
@@ -54,6 +56,24 @@ export class AppComponent {
   public concatenar(list: string):string[]{
     return this.nombres.concat(list);
   }  
+
+  public elimniarId(id: number):void{
+    for(const iterator of this.listUsuario){
+      if(iterator.id === id) {
+        this.listUsuario.splice(this.listUsuario.indexOf(iterator), 1);
+        console.log('Fue eliminado el id: ' + id);
+      }
+    }
+  }
+
+  public desactivarButton(data: boolean):void {
+    this.activarButton = data;
+  }
+
+  public mostrarEvento(event: any):void {
+    console.log(event);
+    console.log("El enter fue presionado");
+  }
 
 
 }

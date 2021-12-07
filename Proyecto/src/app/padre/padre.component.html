@@ -1,0 +1,10 @@
+<p>padre works!</p>
+<app-hijo [recibido] = "mensajeHijo" [usuarioRecibido] = "usuarioHijo"></app-hijo>
+
+<button (click) = "enviarMensaje()">Enviar Mensaje</button>
+
+<button (click) = "mostrarDato()">Mostrar Dato</button>
+<input [(ngModel)] = "persona.id">
+<input [(ngModel)] = "persona.name">
+<input [(ngModel)] = "persona.age">
+<input [(ngModel)] = "persona.status">
