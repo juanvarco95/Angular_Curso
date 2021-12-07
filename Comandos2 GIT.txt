@@ -10,3 +10,5 @@ git log --oneline
 git branch <nombre> -- Crear una rama 
 git checkout <nombre> -- Cambiar de rama
 git pull origin master -- Traer cambios generados en el código
+git merge <nombre> -- Actualizar rama desde master
+gitk -- Software para visualizar git
